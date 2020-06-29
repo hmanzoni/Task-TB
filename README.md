@@ -1,6 +1,6 @@
 # Welcome to Task-TB!
 
-Hi! I'm **Task-TB** a simple webapp for make your life more easy, clearing your ideas brain and organizing in your desktop with a simple ToDo list !. 
+Hi! I'm **Task-TB** a simple webapp for make your life more easier, clearing your ideas brain and organizing in your desktop with a simple ToDo list !. 
 
 
 ## Prerequisites
