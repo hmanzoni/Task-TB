@@ -1,0 +1,36 @@
+{
+  "name": "ts_node_crud",
+  "version": "1.0.0",
+  "description": "Task-TB is a task project using the basic functions CRUD",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "hbscopy": "ncp ./src/views/ ./dist/views/",
+    "copypublic": "ncp ./src/public/ ./dist/public/",
+    "build": "npm run clean && tsc && npm run hbscopy && npm run copypublic",
+    "dev": "ts-node src/index.ts",
+    "prod": "ts-node dist/index.js",
+    "faitutto": "npm run build && npm run prod"
+  },
+  "keywords": [],
+  "author": "Hugo Carrizo Manzoni",
+  "license": "ISC",
+  "devDependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.3",
+    "@types/express": "^4.17.6",
+    "@types/express-handlebars": "^3.1.0",
+    "@types/mongoose": "^5.7.27",
+    "@types/morgan": "^1.9.1",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "mongoose": "^5.9.20",
+    "morgan": "^1.10.0",
+    "ncp": "^2.0.0",
+    "rimraf": "^3.0.2"
+  }
+}
