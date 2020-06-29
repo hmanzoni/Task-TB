@@ -1,0 +1,264 @@
+html {
+  box-sizing: border-box;
+}
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+body {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  font-family: 'Libre Baskerville', serif;
+}
+.contenedor {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+h2 {
+  flex: 0 1 100%;
+  text-align: center;
+  font-size: 1.6rem;
+}
+h3 {
+  font-family: 'Libre Baskerville', serif;
+  margin:0;
+  font-weight: 700;
+
+}
+.index-div  {
+  height: 50vh;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  padding: 5rem;
+}
+
+/* Contenido */
+.entrada {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  margin: 0.5rem;
+}
+.contenido {
+  background-color: white;
+  text-transform: uppercase;
+  padding: 1rem;
+  text-align: center;
+}
+.contenido h3 {
+  text-align: center;
+  font-size: .9rem;
+  line-height: 1.4rem;
+}
+.contenido span {
+  color:#db008d;
+}
+.botones {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+.otra-info {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+.boton {
+  padding: .6rem 2rem;
+  margin-top: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+.rojo {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  transition: background-color 1s ease-out;
+}
+.rojo:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+.amarillo {
+  color: #212529;
+  background-color: #ffc107;
+  border-color: #ffc107;
+  transition: background-color 1s ease-out;
+}
+.amarillo:hover {
+  background-color: #e0a800;
+  border-color: #d39e00;
+}
+.description {
+  text-transform: initial;
+}
+.iconito {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.inserito i {
+  color: #00d102;
+}
+.elaborazione i {
+  color: #ea541a;
+}
+.completato i {
+  color: #008fd1;
+}
+@media screen and (min-width:480px) {
+  .contenido-principal {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  }
+  .entrada {
+      flex: 0 1 calc(50% - 1rem);
+
+  }
+}
+
+@media screen and (min-width:768px) {
+  .entrada {
+      flex: 0 1 calc(33% - 1rem);
+  }
+}
+
+/* Categorias */
+.categorias ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+}
+.categorias ul li {
+  flex: 1 0 calc(50%);
+  padding: 2rem;
+}
+
+.categorias ul li:nth-child(1) {
+  background-color: #008fd1;
+}
+.categorias ul li:nth-child(2) {
+  background-color: #db008d;
+}
+.categorias ul li:nth-child(3) {
+  background-color: #9800d1;
+}
+.categorias ul li:nth-child(4) {
+  background-color: #eca300;
+}
+
+.categorias ul li a {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.categorias ul li i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width:768px) {
+  .categorias ul li {
+      flex: 1;
+  }
+}
+
+/* Footer */
+
+@media screen and (min-width:768px) {
+  .footer .contenedor {
+      display: flex;
+  }
+}
+
+.copyright {
+  color: #fff;
+  background-color: #004d70;
+  margin: 2rem 0 0 0;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.contact-wrapper {
+  margin: 0.5rem;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+.contact-wrapper > * {
+  padding: 1rem;
+
+}
+.contact-wrapper h1 {
+  text-align: center;
+  margin: 0;
+}
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.campo {
+  grid-column: 1 / 3;
+}
+.contact-form form div {
+  margin: 0;
+  padding: 1rem;
+}
+.contact-form form div label {
+  font-size: 1.2rem;
+}
+.contact-form form button,
+.contact-form form input,
+.contact-form form select,
+.contact-form form textarea {
+  width: 100%;
+  padding: .7rem;
+  margin-top: .5rem;
+  border-radius: 5px;
+}
+.contact-form form select, 
+.contact-form form select option {
+  text-transform: capitalize;
+}
+.contact-form form input:hover,
+.contact-form form input:focus,
+.contact-form form select:hover,
+.contact-form form select:focus,
+.contact-form form textarea:hover,
+.contact-form form textarea:focus {
+  background-color: #e9f9e69e;
+  outline-color: #43a221;
+}
+.contact-form form select {
+  font-size: 1.2rem;
+}
+.contact-form form button {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+  border: 0;
+  border-radius: 10px;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background-color: #218838;
+  border-color: #1e7e34;
+  color: black;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+.contact-form form .alert-error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  padding: .5rem;
+}
+.contact-form form .alert-error ul {
+  margin: 0;
+}
+.contact-form form .alert-error ul li {
+  list-style: none;
+  margin: .5rem 0;
+}

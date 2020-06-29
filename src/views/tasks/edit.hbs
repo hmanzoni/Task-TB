@@ -1,0 +1,49 @@
+<div class="contact-wrapper">
+  <h1>Modificare compito</h1>
+  <div class="contact-form">
+
+    <form action="/tasks/edit/{{taskForEdit._id}}" method="POST">
+
+      <div class="campo">
+        <label for="title">Titolo</label>
+        <input type="text" name="title" value="{{taskForEdit.title}}" placeholder="Scrivi un titolo" class="form-control" maxlength="100" id="title"
+          autofocus required>
+      </div>
+
+      <div class="campo">
+        <label for="description">Descrizione</label>
+        <textarea name="description" class="form-control" placeholder="Scrivi una descrizione" rows="10" maxlength="500"
+          id="description" autofocus required>{{taskForEdit.description}}</textarea>
+      </div>
+
+      <div class="campo-medio">
+        <label for="state">Stato</label>
+        <select name="state" id="state">
+              <option value="{{taskForEdit.state}}" selected>{{taskForEdit.state}}</option>
+              <option value="inserito">inserito</option>
+              <option value="in elaborazione">in elaborazione</option>
+              <option value="completato">completato</option>
+        </select>
+      </div>
+
+      <div class="campo-medio">
+        <label for="date">Data</label>
+        <input type="date" name="date" value="{{taskForEdit.todayDateFormatted}}" id="date" class="form-control">
+      </div>
+
+      <div class="campo">
+        {{#if errorArr}}
+        <div class="alert-error">
+          <ul>{{#each errorArr}}
+            <li>{{this}}</li>
+            {{/each}}
+          </ul>
+        </div>
+        {{/if}}
+        <button type="submit">Modifica</button>
+      </div>
+
+    </form>
+
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<main class="contenido-principal">
+  {{#if tasks}}
+    <h2>Lista dei compiti</h2>
+    {{#each tasks}}
+    <article class="entrada {{state}}">
+      <div class="contenido">
+        <div class="iconito"><i class="{{icon}}"></i></div>
+        <div class="informacion">
+          <h3>{{title}}</h3>
+          <p class="description">{{description}}</p>
+        </div>
+        <div class="otra-info">
+          <p>Stato: <span>{{state}}</span></p>
+          <p>Creato: <span>{{todayDateFormatted}}</span></p>
+        </div>
+        <div class="botones">
+          <a href="/tasks/delete/{{_id}}" class="boton rojo">Delete</a>
+          <a href="/tasks/edit/{{_id}}" class="boton amarillo">Edit</a>
+        </div>
+      </div>
+    </article>
+    {{/each}}
+  {{else}}
+    <div class="index-div">
+      <h2>Non ci sono stati creati compiti finora,</h2>
+      <h2>crea uno col bottone azurro "Create"</h2>
+    </div>
+  {{/if}}
+</main>
