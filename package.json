@@ -28,7 +28,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^4.0.4",
-    "mongoose": "^5.9.20",
+    "mongoose": "^5.13.15",
     "morgan": "^1.10.0",
     "ncp": "^2.0.0",
     "rimraf": "^3.0.2"
