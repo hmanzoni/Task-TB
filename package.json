@@ -21,7 +21,7 @@
     "@types/express-handlebars": "^3.1.0",
     "@types/mongoose": "^5.7.27",
     "@types/morgan": "^1.9.1",
-    "nodemon": "^2.0.4",
+    "nodemon": "^2.0.20",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.5"
   },
